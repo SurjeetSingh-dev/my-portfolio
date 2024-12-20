@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e858ef2b9f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ----------Home---------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="Image/my-logo2.png" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">Aboute</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Surjeet Singh</span><br> from Kanpur U.P. India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------About---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Image/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate and dedicated Computer Science Engineering student at Apollo Institute of Technology, 
+                        Dr. A.P.J Abdul Kalam University, specializing in full-stack web development with a strong foundation in both
+                         frontend and backend technologies. With hands-on experience in building scalable web applications and solving complex problems, 
+                         I specialize in creating responsive, fast, and optimized web solutions tailored to meet your business needs.</p>
+                    <div class="tab-titles ">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experiance</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Frontend and Backend Development</li>
+                            <li><span>Frontend Development</span><br>HTML | CSS | JavaScript | TailwindCSS | React.js
+                            </li>
+                            <li><span>Backend Development</span><br>Node.js | MongoDB | Express.js</li>
+                            <li><span>Tool & Frameworks</span><br>Git & GitHub | Postman | Socket.io</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Virtual job simulation (Wells Fargo)</span><br>Created data models and ERDs, integrating them
+                                into a Spring application to enhance system scalability at Wells Fargo </li>
+                            <li><span>Virtual job simulation (Skyscanner)</span><br>Developed a user-friendly 
+                                data collection application with React.js and the Backpack library, optimizing efficiency and user engagement.
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>Btech from Apollo Institute of Technology</li>
+                            <li><span>2020</span><br>Polytechnic from Government Polytechnic Kanpur </li>
+                            <li><span>2016</span><br>12th from Janta Inter College</li>
+                            <li><span>2014</span><br>10th from Janta Inter College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------Services---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" color="#7ed321"
+                        fill="none">
+                        <path
+                            d="M11.5379 8.32172C11.6966 7.89276 12.3034 7.89276 12.4621 8.32172L13.1735 10.2443C13.2733 10.514 13.486 10.7267 13.7557 10.8265L15.6783 11.5379C16.1072 11.6966 16.1072 12.3034 15.6783 12.4621L13.7557 13.1735C13.486 13.2733 13.2733 13.486 13.1735 13.7557L12.4621 15.6783C12.3034 16.1072 11.6966 16.1072 11.5379 15.6783L10.8265 13.7557C10.7267 13.486 10.514 13.2733 10.2443 13.1735L8.32172 12.4621C7.89276 12.3034 7.89276 11.6966 8.32172 11.5379L10.2443 10.8265C10.514 10.7267 10.7267 10.514 10.8265 10.2443L11.5379 8.32172Z"
+                            stroke="currentColor" stroke-width="1.5" />
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M8 8C8.67327 4.46819 10.2109 2 12 2C13.7891 2 15.3267 4.46819 16 8"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M8 16C8.67327 19.5318 10.2109 22 12 22C13.7891 22 15.3267 19.5318 16 16"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M2 12H4.5M22 12H19.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                    <h2>Web Design</h2>
+                    <p>I offer professional web development services to bring your ideas to life.
+                         From designing visually appealing, user-friendly websites to ensuring seamless functionality, I specialize in creating responsive, fast, and optimized web solutions tailored to meet your business needs.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" color="#7ed321"
+                        fill="none">
+                        <path
+                            d="M17 8L18.8398 9.85008C19.6133 10.6279 20 11.0168 20 11.5C20 11.9832 19.6133 12.3721 18.8398 13.1499L17 15"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M7 8L5.16019 9.85008C4.38673 10.6279 4 11.0168 4 11.5C4 11.9832 4.38673 12.3721 5.16019 13.1499L7 15"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M14.5 4L9.5 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <h2>Frontend Design</h2>
+                    <p>With expertise in modern frontend technologies like ReactJS, NextJS, and TailwindCSS,HTML,CSS and JavaScript I craft visually stunning and highly interactive user interfaces.
+                         My focus is on building responsive designs that deliver excellent user experiences across devices, ensuring your brand stands out.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" color="#7ed321"
+                        fill="none">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                        <path
+                            d="M16 10L17.2265 11.0572C17.7422 11.5016 18 11.7239 18 12C18 12.2761 17.7422 12.4984 17.2265 12.9428L16 14"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M8 10L6.77346 11.0572C6.25782 11.5016 6 11.7239 6 12C6 12.2761 6.25782 12.4984 6.77346 12.9428L8 14"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M13 9L11 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <h2>Backend Design</h2>
+                    <p>I provide robust backend development services using NodeJS, Express, and MongoDB
+                         to create scalable, secure, and efficient server-side solutions. Whether it's API integration, database management, or server optimization, I ensure your application runs flawlessly.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------portfolio------  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Image/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Password Manager</h3>
+                        <p>PassOP (Password Manager): Built a web platform for secure password management using React.js, Tailwind CSS, Express.js, Node.js and MongoDB.
+                            Integrated password encryption to ensure data protection.
+                            .</p>
+                        <a href=""><i class="fa-sharp fa-solid fa-square-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Image/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>My Portfolio</h3>
+                        <p>Portfolio Website:
+                            Developed a visually stunning and highly interactive portfolio website using HTML, CSS, and JavaScript. The website showcases my skills, projects, and professional achievements with an intuitive user interface and responsive design, ensuring an engaging experience across all devices. Focused on delivering clean code,
+                             smooth animations, and seamless navigation to leave a lasting impression on visitors.</p>
+                        <a href=""><i class="fa-sharp fa-solid fa-square-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Image/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Chss Game</h3>
+                        <p>Chess Game: Built a cross-platform multiplayer chess game with real-time functionality, 
+                            integrating NodeJS, Socket.io, and advanced game logic using Chess.js.</p>
+                        <a href=""><i class="fa-sharp fa-solid fa-square-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn" href="#">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------Contact---------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="contact-row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> surjeetsingh151998@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 8840972008</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/surjeetsingh8840/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/SurjeetSingh-dev"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://"><i class="fa-brands fa-square-twitter"></i></a>
+                        
+                    </div>
+                    <a class="btn btn2 " href="Image/RESUME NEW.pdf">Download CV</a>
+                    <!-- <a class="btn btn2 " download href="Image/RESUME NEW.pdf"  >Download CV</a>-->
+                    <!--This is direct download by clicking on btn -->
+                </div>
+                <div class="contact-right">
+                    <form name="contactMe" netlify>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Messae"></textarea>
+                        <button type="submit " class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Surjeet made with <i class="fa-solid fa-heart"></i> by Surjeet Singh </p>
+        </div>
+    </div>
+
+    <script src="server.js"></script>
+</body>
+
+</html>
